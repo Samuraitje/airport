@@ -1,0 +1,33 @@
+<script>
+  $(document).ready(function() {
+    $("#showTable").click(function(){
+      var results = {}
+      $.ajax({
+        type: "GET",
+        contentType: "application/json",
+        url: "localhost:8080/api/airplanes",
+        data: JSON.stringify(results),
+        dataType: 'json',
+        cache: false,
+        timeout: 600000,
+        success: function (data) {
+
+        }
+      });
+    });
+  });
+</script>
+<div class="container">
+  <div class="row">
+    <div class="titleBar col-xs-12 text-center">
+      <h1>Airport App</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="block col-xs-12 text-center">
+      <button id="showTable" class="btn btn-primary btn-group-lg">
+        Show Table
+      </button>
+    </div>
+  </div>
+</div>

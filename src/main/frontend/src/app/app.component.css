@@ -1,0 +1,14 @@
+.titleBar {
+  background: darkcyan;
+}
+
+.block {
+  background: aliceblue;
+  height: 500px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
